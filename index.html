@@ -11,7 +11,17 @@
     
     <img class="logo" src="image/logo.png" alt="Imagem logo"/>
 
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> Caracteres</span>
+        <input type="range" class="slider" id="slider" min="5" max="25" value="15">
+        <button class="button-cta" id="button" onclick="generatePassword()">Gerar senha</button>
+    </main>
 
+    <div class="container-password hide" id="container-password" onclick= "copyPassword()">
+        <span class="title">Sua senha gerada foi:</span>
+        <span class="password" id="password">256155161516145</span>
+        <span class="tool">Clique na senha para copiar 👆</span>
+    </div>   
     <script src="script.js"></script>
 </body>
 </html>
